@@ -14,9 +14,19 @@
  * limitations under the License.
  */
 
+using System.Collections.Generic;
+
 namespace Kudo.Core
 {
 	public class User : Entity
 	{
+		/// <summary>
+		/// The passwords related to the user.
+		/// </summary>
+		public virtual IList<Password> Passwords
+		{
+			get;
+			set;
+		}
 	}
 }
