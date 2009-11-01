@@ -5,9 +5,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kudo.Core", "Kudo.Core\Kudo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kudo.Data", "Kudo.Data\Kudo.Data.csproj", "{68F35B2B-0104-4C7D-BE76-E339762A315E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kudo.Tests", "Kudo.Tests\Kudo.Tests.csproj", "{D5F15DCA-8E48-4385-A191-CAD428FBE96A}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kudo.Web", "Kudo.Web\Kudo.Web.csproj", "{F423F6C4-2FB7-4D31-9AB7-E979CA37FE56}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4B644566-0E3D-4FA8-B1C1-764D33CC0364}"
+	ProjectSection(SolutionItems) = preProject
+		Kudo.vsmdi = Kudo.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Kudo.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -21,6 +32,10 @@ Global
 		{68F35B2B-0104-4C7D-BE76-E339762A315E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68F35B2B-0104-4C7D-BE76-E339762A315E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68F35B2B-0104-4C7D-BE76-E339762A315E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F15DCA-8E48-4385-A191-CAD428FBE96A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F15DCA-8E48-4385-A191-CAD428FBE96A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F15DCA-8E48-4385-A191-CAD428FBE96A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F15DCA-8E48-4385-A191-CAD428FBE96A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F423F6C4-2FB7-4D31-9AB7-E979CA37FE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F423F6C4-2FB7-4D31-9AB7-E979CA37FE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F423F6C4-2FB7-4D31-9AB7-E979CA37FE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
