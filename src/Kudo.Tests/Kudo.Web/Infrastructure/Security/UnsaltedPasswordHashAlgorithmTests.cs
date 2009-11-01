@@ -30,5 +30,13 @@ namespace Tests.Kudo.Web.Infrastructure.Security
 			string hash = hasher.GenerateHash("test");
 			Assert.AreEqual("098f6bcd4621d373cade4e832627b4f6", hash);
 		}
+
+		[TestMethod]
+		public void CanVerifyCorrectMd5Hash()
+		{
+			var hasher = new UnsaltedPasswordHashAlgorithm<MD5CryptoServiceProvider>();
+			bool valid = hasher.VerifyPassword("test", "098f6bcd4621d373cade4e832627b4f6");
+			Assert.IsTrue(valid);
+		}
 	}
 }
