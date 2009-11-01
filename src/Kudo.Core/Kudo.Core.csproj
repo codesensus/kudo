@@ -50,6 +50,7 @@
     </Compile>
     <Compile Include="Entity.cs" />
     <Compile Include="EntityWithTypedId.cs" />
+    <Compile Include="Password.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
