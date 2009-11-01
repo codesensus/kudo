@@ -22,7 +22,17 @@ namespace Kudo.Core
 	{
 		public User()
 		{
+			EmailAddresses = new List<EmailAddress>();
 			Passwords = new List<Password>();
+		}
+
+		/// <summary>
+		/// The email addresses related to the user.
+		/// </summary>
+		public virtual IList<EmailAddress> EmailAddresses
+		{
+			get;
+			set;
 		}
 
 		/// <summary>
