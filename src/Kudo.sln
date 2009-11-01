@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kudo.Core", "Kudo.Core\Kudo.Core.csproj", "{EFA0C38C-63C3-4EAB-8A08-C27519DBF9AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFA0C38C-63C3-4EAB-8A08-C27519DBF9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA0C38C-63C3-4EAB-8A08-C27519DBF9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA0C38C-63C3-4EAB-8A08-C27519DBF9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA0C38C-63C3-4EAB-8A08-C27519DBF9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
