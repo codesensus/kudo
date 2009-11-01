@@ -1,0 +1,2 @@
+Any issues related to this project can be reported at:
+http://github.com/codesensus/kudo/issues
