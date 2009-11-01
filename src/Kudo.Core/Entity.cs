@@ -16,7 +16,7 @@
 
 namespace Kudo.Core
 {
-	public class Entity
+	public class Entity : EntityWithTypedId<int>
 	{
 	}
 }
