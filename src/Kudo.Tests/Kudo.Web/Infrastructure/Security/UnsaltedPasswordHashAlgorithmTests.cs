@@ -38,5 +38,21 @@ namespace Tests.Kudo.Web.Infrastructure.Security
 			bool valid = hasher.VerifyPassword("test", "098f6bcd4621d373cade4e832627b4f6");
 			Assert.IsTrue(valid);
 		}
+
+		[TestMethod]
+		public void CanGenerateCorrectSha1Hash()
+		{
+			var hasher = new UnsaltedPasswordHashAlgorithm<SHA1Managed>();
+			string hash = hasher.GenerateHash("test");
+			Assert.AreEqual("a94a8fe5ccb19ba61c4c0873d391e987982fbbd3", hash);
+		}
+
+		[TestMethod]
+		public void CanVerifyCorrectSha1Hash()
+		{
+			var hasher = new UnsaltedPasswordHashAlgorithm<SHA1Managed>();
+			bool valid = hasher.VerifyPassword("test", "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3");
+			Assert.IsTrue(valid);
+		}
 	}
 }
