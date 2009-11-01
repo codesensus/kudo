@@ -22,7 +22,8 @@ namespace Kudo.Web.Infrastructure.Security
 	{
 		public string GenerateHash(string password)
 		{
-			throw new NotImplementedException();
+			string salt = BCrypt.GenerateSalt();
+			return BCrypt.HashPassword(password, salt);
 		}
 
 		public bool VerifyPassword(string password, string hash)
