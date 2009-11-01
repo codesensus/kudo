@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+using System;
+
 namespace Kudo.Core
 {
 	public abstract class EntityWithTypedId<T>
@@ -29,6 +31,74 @@ namespace Kudo.Core
 		{
 			get;
 			protected set;
+		}
+
+		/// <summary>
+		/// The date and time when the entity was created.
+		/// </summary>
+		/// <remarks>
+		/// This value SHOULD be persisted with time zone;
+		/// alternatively, in UTC.
+		/// </remarks>
+		public virtual DateTime CreatedOn
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// The user who created the entity.
+		/// </summary>
+		public virtual User CreatedBy
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// The date and time when the entity was last modified;
+		/// null, if the entity isn't modified.
+		/// </summary>
+		/// <remarks>
+		/// This value SHOULD be persisted with time zone;
+		/// alternatively, in UTC.
+		/// </remarks>
+		public virtual DateTime? ModifiedOn
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// The user who has last modified the entity.
+		/// </summary>
+		public virtual User ModifiedBy
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// The date and time when the entity was deleted;
+		/// null, if the entity isn't deleted.
+		/// </summary>
+		/// <remarks>
+		/// This value SHOULD be persisted with time zone;
+		/// alternatively, in UTC.
+		/// </remarks>
+		public virtual DateTime? DeletedOn
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// The user who deleted the entity.
+		/// </summary>
+		public virtual User DeletedBy
+		{
+			get;
+			set;
 		}
 	}
 }
