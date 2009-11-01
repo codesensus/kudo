@@ -21,6 +21,15 @@ using System.Text;
 
 namespace Kudo.Web.Infrastructure.Security
 {
+	/// <summary>
+	/// Defines an unsalted password hash algorithm using generics to allow
+	/// the same class to be reused for multiple algorithms.
+	/// </summary>
+	/// <remarks>
+	/// This class only serves as a reference implementation and to use with
+	/// legacy systems where passwords are already hashed without a salt.
+	/// </remarks>
+	/// <typeparam name="T">The type of the hash algorithm</typeparam>
 	public class UnsaltedPasswordHashAlgorithm<T> : IPasswordHashAlgorithm
 		where T : HashAlgorithm, new()
 	{
