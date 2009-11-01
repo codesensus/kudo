@@ -48,6 +48,20 @@
       <Link>License.txt</Link>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kudo.Core\Kudo.Core.csproj">
+      <Project>{EFA0C38C-63C3-4EAB-8A08-C27519DBF9AD}</Project>
+      <Name>Kudo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kudo.Data\Kudo.Data.csproj">
+      <Project>{68F35B2B-0104-4C7D-BE76-E339762A315E}</Project>
+      <Name>Kudo.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kudo.Web\Kudo.Web.csproj">
+      <Project>{F423F6C4-2FB7-4D31-9AB7-E979CA37FE56}</Project>
+      <Name>Kudo.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

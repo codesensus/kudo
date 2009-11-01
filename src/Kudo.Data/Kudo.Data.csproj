@@ -55,6 +55,12 @@
       <Link>License.txt</Link>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kudo.Core\Kudo.Core.csproj">
+      <Project>{EFA0C38C-63C3-4EAB-8A08-C27519DBF9AD}</Project>
+      <Name>Kudo.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
