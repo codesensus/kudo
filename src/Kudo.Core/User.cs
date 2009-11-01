@@ -20,6 +20,11 @@ namespace Kudo.Core
 {
 	public class User : Entity
 	{
+		public User()
+		{
+			Passwords = new List<Password>();
+		}
+
 		/// <summary>
 		/// The passwords related to the user.
 		/// </summary>
