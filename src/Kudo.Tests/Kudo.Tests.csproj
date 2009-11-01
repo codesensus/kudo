@@ -45,6 +45,7 @@
     </Compile>
     <Compile Include="Kudo.Web\Infrastructure\Security\BCryptPasswordHashAlgorithmTests.cs" />
     <Compile Include="Kudo.Web\Infrastructure\Security\BCryptTests.cs" />
+    <Compile Include="Kudo.Web\Infrastructure\Security\UnsaltedPasswordHashAlgorithmTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
