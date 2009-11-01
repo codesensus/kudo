@@ -21,5 +21,14 @@ namespace Kudo.Core
 		protected EntityWithTypedId()
 		{
 		}
+
+		/// <summary>
+		/// The identifier of the entity.
+		/// </summary>
+		public virtual T Id
+		{
+			get;
+			protected set;
+		}
 	}
 }
