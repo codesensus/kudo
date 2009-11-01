@@ -39,7 +39,7 @@ namespace Kudo.Web.Infrastructure.Security
 
 		public bool VerifyPassword(string password, string hash)
 		{
-			throw new NotImplementedException();
+			return string.Equals(GenerateHash(password), hash, StringComparison.InvariantCultureIgnoreCase);
 		}
 	}
 }
