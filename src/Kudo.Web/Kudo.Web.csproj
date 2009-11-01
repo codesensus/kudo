@@ -68,6 +68,7 @@
     <Compile Include="Infrastructure\Security\BCrypt.cs" />
     <Compile Include="Infrastructure\Security\BCryptPasswordHashAlgorithm.cs" />
     <Compile Include="Infrastructure\Security\IPasswordHashAlgorithm.cs" />
+    <Compile Include="Infrastructure\Security\UnsaltedPasswordHashAlgorithm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
