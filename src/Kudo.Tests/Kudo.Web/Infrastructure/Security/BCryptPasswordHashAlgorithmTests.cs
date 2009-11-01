@@ -37,5 +37,14 @@ namespace Tests.Kudo.Web.Infrastructure.Security
 			bool valid = hasher.VerifyPassword("test", "$2a$10$sB2bgbgkW48LJQETILGquOUciQQUjgzGWUjeAOsPzhLdLl3109C7i");
 			Assert.IsTrue(valid);
 		}
+
+		[TestMethod]
+		public void CanValidateGeneratedBCryptHash()
+		{
+			var hasher = new BCryptPasswordHashAlgorithm();
+			string hash = hasher.GenerateHash("test");
+			bool valid = hasher.VerifyPassword("test", hash);
+			Assert.IsTrue(valid);
+		}
 	}
 }
