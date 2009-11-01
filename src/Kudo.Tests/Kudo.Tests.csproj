@@ -7,7 +7,7 @@
     <ProjectGuid>{D5F15DCA-8E48-4385-A191-CAD428FBE96A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Kudo.Tests</RootNamespace>
+    <RootNamespace>Tests</RootNamespace>
     <AssemblyName>Kudo.Tests</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
