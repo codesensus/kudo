@@ -15,7 +15,9 @@
  */
 
 using System;
+using System.Linq;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace Kudo.Web.Infrastructure.Security
 {
@@ -24,7 +26,15 @@ namespace Kudo.Web.Infrastructure.Security
 	{
 		public string GenerateHash(string password)
 		{
-			throw new NotImplementedException();
+			using (HashAlgorithm hashAlgorithm = new T())
+			{
+				byte[] passwordBytes = Encoding.Default.GetBytes(password);
+				byte[] hashBytes = hashAlgorithm.ComputeHash(passwordBytes);
+
+				var hash = hashBytes.Select(b => b.ToString("x2")).ToArray();
+
+				return string.Join("", hash);
+			}
 		}
 
 		public bool VerifyPassword(string password, string hash)
