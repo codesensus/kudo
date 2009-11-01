@@ -20,7 +20,7 @@ using System.Security.Cryptography;
 namespace Kudo.Web.Infrastructure.Security
 {
 	public class UnsaltedPasswordHashAlgorithm<T> : IPasswordHashAlgorithm
-		where T : HashAlgorithm
+		where T : HashAlgorithm, new()
 	{
 		public string GenerateHash(string password)
 		{
