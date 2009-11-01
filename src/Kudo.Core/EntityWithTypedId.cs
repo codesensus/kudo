@@ -22,6 +22,7 @@ namespace Kudo.Core
 	{
 		protected EntityWithTypedId()
 		{
+			CreatedOn = DateTime.Now;
 		}
 
 		/// <summary>
