@@ -16,7 +16,27 @@
 
 namespace Kudo.Core
 {
+	/// <summary>
+	/// Represents a password related to a user.
+	/// </summary>
 	public class Password : Entity
 	{
+		/// <summary>
+		/// The user the password belongs to.
+		/// </summary>
+		public virtual User User
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// The value of the password.
+		/// </summary>
+		public virtual string Value
+		{
+			get;
+			set;
+		}
 	}
 }
