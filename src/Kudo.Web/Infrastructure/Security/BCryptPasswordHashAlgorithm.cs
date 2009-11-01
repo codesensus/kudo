@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-using System;
-
 namespace Kudo.Web.Infrastructure.Security
 {
 	public class BCryptPasswordHashAlgorithm : IPasswordHashAlgorithm
@@ -28,7 +26,7 @@ namespace Kudo.Web.Infrastructure.Security
 
 		public bool VerifyPassword(string password, string hash)
 		{
-			throw new NotImplementedException();
+			return BCrypt.CheckPassword(password, hash);
 		}
 	}
 }
