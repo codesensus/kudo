@@ -48,6 +48,7 @@
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="EmailAddress.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="EntityWithTypedId.cs" />
     <Compile Include="Password.cs" />
