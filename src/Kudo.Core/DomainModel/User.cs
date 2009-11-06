@@ -28,6 +28,15 @@ namespace Kudo.Core.DomainModel
 		}
 
 		/// <summary>
+		/// The user's name.
+		/// </summary>
+		public virtual string Name
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
 		/// The email addresses related to the user.
 		/// </summary>
 		public virtual IList<EmailAddress> EmailAddresses
