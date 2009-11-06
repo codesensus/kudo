@@ -33,7 +33,7 @@ namespace Kudo.Core.DomainModel
 		public virtual IList<EmailAddress> EmailAddresses
 		{
 			get;
-			set;
+			protected set;
 		}
 
 		/// <summary>
@@ -42,7 +42,7 @@ namespace Kudo.Core.DomainModel
 		public virtual IList<Password> Passwords
 		{
 			get;
-			set;
+			protected set;
 		}
 	}
 }
