@@ -18,9 +18,10 @@ using System.Collections.Generic;
 
 namespace Kudo.Core.DomainModel
 {
-	public class User : EntityWithTypedId<long>
+	public class User : Node
 	{
 		public User()
+			: base(NodeType.User)
 		{
 			EmailAddresses = new List<EmailAddress>();
 			Passwords = new List<Password>();
