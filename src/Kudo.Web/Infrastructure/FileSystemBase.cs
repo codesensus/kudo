@@ -7,37 +7,19 @@ namespace Kudo.Web.Infrastructure
 {
 	public abstract class FileSystemBase : IFileSystem
 	{
-		public void Delete(FileNode file)
-		{
-			throw new NotImplementedException();
-		}
+		public abstract void Delete(FileNode file);
 
-		public Stream Read(FileNode file)
-		{
-			throw new NotImplementedException();
-		}
+		public abstract Stream Read(FileNode file);
 
-		public void Write(FileNode file, Stream input)
-		{
-			throw new NotImplementedException();
-		}
+		public abstract void Write(FileNode file, Stream input);
 
-		public Uri GetUrl(FileNode file)
-		{
-			throw new NotImplementedException();
-		}
+		public abstract Uri GetUrl(FileNode file);
 
-		public string ConvertToSafeFileName(string fileName)
-		{
-			throw new NotImplementedException();
-		}
+		public abstract string ConvertToSafeFileName(string fileName);
 
-		public bool SupportsBothHttpAndHttps
+		public abstract bool SupportsBothHttpAndHttps
 		{
-			get
-			{
-				throw new NotImplementedException();
-			}
+			get;
 		}
 	}
 }
