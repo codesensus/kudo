@@ -18,5 +18,6 @@ namespace Kudo.Core.DomainModel
 {
 	public enum NodeType
 	{
+		User,
 	}
 }
