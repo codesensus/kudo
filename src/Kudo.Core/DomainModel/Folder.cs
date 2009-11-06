@@ -16,10 +16,11 @@
 
 namespace Kudo.Core.DomainModel
 {
-	public enum NodeType
+	public class Folder : Node
 	{
-		File,
-		Folder,
-		User,
+		public Folder()
+			: base(NodeType.Folder)
+		{
+		}
 	}
 }
