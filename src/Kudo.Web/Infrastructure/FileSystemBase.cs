@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using Kudo.Data;
+// We need to map this explicitly, as we've also got a File in the System.IO
+// namespace which we need to use
 using FileNode = Kudo.Core.DomainModel.File;
 
 namespace Kudo.Web.Infrastructure
