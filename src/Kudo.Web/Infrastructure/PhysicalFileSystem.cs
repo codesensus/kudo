@@ -24,6 +24,13 @@ namespace Kudo.Web.Infrastructure
 {
 	public class PhysicalFileSystem : FileSystemBase
 	{
+		protected override string GetFolderPath(FileNode file, char separatorChar)
+		{
+			string folder = GetFolderPath(file, separatorChar);
+
+			return string.Format("{0}" + separatorChar + "{1}", "media", folder);
+		}
+
 		public override void Delete(FileNode file)
 		{
 			throw new NotImplementedException();
