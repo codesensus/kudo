@@ -52,6 +52,7 @@
     <Compile Include="DomainModel\Entity.cs" />
     <Compile Include="DomainModel\EntityWithTypedId.cs" />
     <Compile Include="DomainModel\Node.cs" />
+    <Compile Include="DomainModel\NodeType.cs" />
     <Compile Include="DomainModel\Password.cs" />
     <Compile Include="DomainModel\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
