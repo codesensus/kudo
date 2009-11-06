@@ -18,7 +18,7 @@ using System.Collections.Generic;
 
 namespace Kudo.Core
 {
-	public class User : Entity
+	public class User : EntityWithTypedId<long>
 	{
 		public User()
 		{
