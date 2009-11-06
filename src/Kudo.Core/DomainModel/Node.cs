@@ -18,6 +18,11 @@ namespace Kudo.Core.DomainModel
 {
 	public abstract class Node : EntityWithTypedId<long>
 	{
+		protected Node(NodeType type)
+		{
+			Type = type;
+		}
+
 		public virtual NodeType Type
 		{
 			get;
