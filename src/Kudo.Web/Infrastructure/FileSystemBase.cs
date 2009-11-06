@@ -11,7 +11,7 @@ namespace Kudo.Web.Infrastructure
 {
 	public abstract class FileSystemBase : IFileSystem
 	{
-		private readonly Regex _idSplitter = new Regex("(.{1})(?:(.{3})){5}", RegexOptions.Compiled);
+		private static readonly Regex _idSplitter = new Regex("(.{1})(?:(.{3})){5}", RegexOptions.Compiled);
 
 		protected virtual string GetFilePath(FileNode file, char separatorChar)
 		{
