@@ -14,29 +14,12 @@
  * limitations under the License.
  */
 
-namespace Kudo.Core
+namespace Kudo.Core.DomainModel
 {
-	/// <summary>
-	/// Represents an email address related to a user.
-	/// </summary>
-	public class EmailAddress : Entity
+	public abstract class Entity : EntityWithTypedId<int>
 	{
-		/// <summary>
-		/// The user the email address belongs to.
-		/// </summary>
-		public virtual User User
+		protected Entity()
 		{
-			get;
-			set;
-		}
-
-		/// <summary>
-		/// The value of the email address.
-		/// </summary>
-		public virtual string Value
-		{
-			get;
-			set;
 		}
 	}
 }

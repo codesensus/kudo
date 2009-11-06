@@ -14,12 +14,29 @@
  * limitations under the License.
  */
 
-namespace Kudo.Core
+namespace Kudo.Core.DomainModel
 {
-	public abstract class Entity : EntityWithTypedId<int>
+	/// <summary>
+	/// Represents a password related to a user.
+	/// </summary>
+	public class Password : Entity
 	{
-		protected Entity()
+		/// <summary>
+		/// The user the password belongs to.
+		/// </summary>
+		public virtual User User
 		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// The value of the password.
+		/// </summary>
+		public virtual string Value
+		{
+			get;
+			set;
 		}
 	}
 }

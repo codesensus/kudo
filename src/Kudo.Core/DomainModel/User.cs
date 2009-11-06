@@ -16,7 +16,7 @@
 
 using System.Collections.Generic;
 
-namespace Kudo.Core
+namespace Kudo.Core.DomainModel
 {
 	public class User : EntityWithTypedId<long>
 	{

@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-namespace Kudo.Core
+namespace Kudo.Core.DomainModel
 {
 	/// <summary>
-	/// Represents a password related to a user.
+	/// Represents an email address related to a user.
 	/// </summary>
-	public class Password : Entity
+	public class EmailAddress : Entity
 	{
 		/// <summary>
-		/// The user the password belongs to.
+		/// The user the email address belongs to.
 		/// </summary>
 		public virtual User User
 		{
@@ -31,7 +31,7 @@ namespace Kudo.Core
 		}
 
 		/// <summary>
-		/// The value of the password.
+		/// The value of the email address.
 		/// </summary>
 		public virtual string Value
 		{

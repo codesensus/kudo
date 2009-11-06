@@ -16,7 +16,7 @@
 
 using System;
 
-namespace Kudo.Core
+namespace Kudo.Core.DomainModel
 {
 	public abstract class EntityWithTypedId<T>
 	{

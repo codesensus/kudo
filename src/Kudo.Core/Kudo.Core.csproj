@@ -48,12 +48,12 @@
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="EmailAddress.cs" />
-    <Compile Include="Entity.cs" />
-    <Compile Include="EntityWithTypedId.cs" />
-    <Compile Include="Password.cs" />
+    <Compile Include="DomainModel\EmailAddress.cs" />
+    <Compile Include="DomainModel\Entity.cs" />
+    <Compile Include="DomainModel\EntityWithTypedId.cs" />
+    <Compile Include="DomainModel\Password.cs" />
+    <Compile Include="DomainModel\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\License.txt">
