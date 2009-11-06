@@ -13,7 +13,14 @@ namespace Kudo.Web.Infrastructure
 	{
 		private readonly Regex _idSplitter = new Regex("(.{1})(?:(.{3})){5}", RegexOptions.Compiled);
 
-		protected virtual string GetPath(FileNode file, char separatorChar)
+		protected virtual string GetFilePath(FileNode file, char separatorChar)
+		{
+			string folder = GetFolderPath(file, separatorChar);
+
+			return string.Format("{0}" + separatorChar + "{1}", folder, file.Filename);
+		}
+
+		protected virtual string GetFolderPath(FileNode file, char separatorChar)
 		{
 			var hexadecimalId = file.Id.ToString("x16");
 
@@ -22,9 +29,7 @@ namespace Kudo.Web.Infrastructure
 				.SelectMany(g => g.Captures.Cast<Capture>()).Skip(1)
 				.Select(c => c.Value.TrimStart('0').PadLeft(1, '0')).ToArray();
 
-			var idPart = string.Join(new string(separatorChar, 1), idParts);
-
-			return string.Format("{0}" + separatorChar + "{1}", idPart, file.Filename);
+			return string.Join(new string(separatorChar, 1), idParts);
 		}
 
 		public abstract void Delete(FileNode file);
