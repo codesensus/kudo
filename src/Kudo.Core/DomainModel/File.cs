@@ -22,5 +22,11 @@ namespace Kudo.Core.DomainModel
 			: base(NodeType.File)
 		{
 		}
+
+		public virtual string Filename
+		{
+			get;
+			set;
+		}
 	}
 }
